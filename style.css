@@ -6,7 +6,7 @@
 
 body{
     font-family: 'Montserrat', sans-serif;
-    background-color: #F2D096;
+    background-color: black;
 }
 
 .container{
@@ -39,7 +39,7 @@ body{
     width: fit-content;
     padding: 5px;
     text-transform: uppercase;
-    background-color: #E2B740;
+    background-color: white;
     letter-spacing: 1.5px;
     color: black;
     border: 2px solid black;
@@ -79,7 +79,14 @@ body{
     outline: none;
 }
 
-.container #form .input-control .percentage{
+.container #form .input-control input[type=number]{
+    color: black;
+    padding: 5px 10px;
+    border: 2px solid black;
+    outline: none;
+}
+
+.container #form .input-control .icon-percentage{
     width: fit-content;
     position: absolute;
     top: 60%;
@@ -88,6 +95,23 @@ body{
     font-weight: 800;
     padding: 4px;
     left: 40.5%;
+}
+
+
+.container #form .input-control .icon-real{
+    width: fit-content;
+    position: absolute;
+    left: 55.5%;
+    top: 42%;
+    background: black;
+    color: white;
+    padding: 4.5px;
+    font-weight: 400;
+    font-size: 14px;
+}
+
+.container #form .input-control #mensalidade {
+    padding-left: 30px;
 }
 
 
@@ -125,11 +149,13 @@ body{
 .container .btn{
     font-size: 25px;
     font-weight: 700;
+    letter-spacing: 1.5px;
     padding: 10px;
     width: 50%;
     display: block;
     margin: 20px auto;
-    background-color: #E248C0;
+    /* background-color: #E248C0; */
+    background-color: white;
     box-shadow: 3px 4px 0px 0px #000000;
     border: solid black 3px;
     cursor: pointer;
@@ -137,8 +163,4 @@ body{
 
 }
 
-.container .btn:hover{
-    background-color: white;
-    color: black;
-}
 

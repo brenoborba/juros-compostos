@@ -18,27 +18,27 @@
         <form action="/" method="GET" id="form">
             <div class="input-control">
                 <label for="">Nome:</label>
-                <input type="text" name="name" class="input-text" required>
+                <input type="text" name="name" class="input-text" id="name" required>
                 <span class="input-error"></span>
             </div>
 
             <div class="input-control">
                 <label for="">Mensalidade:</label>
-                <input type="text" name="mensalidade" class="input-text" required>
+                <input type="number" name="mensalidade" class="input-text" id="mensalidade" step="0.01" required>
+                <p class="icon-real">R$</p>
                 <span class="input-error"></span>
             </div>
 
             <div class="input-control">
                 <label for="">Taxa de juros:</label>
-                <input type="text" name="taxa" class="input-text" required>
-                 <p class="percentage">%</p>
+                <input type="number" name="taxa" class="input-text" id="taxa" step="0.01" required>
+                <p class="icon-percentage">%</p>
                 <span class="input-error"></span>
-
             </div>
 
             <div class="custom-slider">
                 <label for="slider">Tempo de contribuição:</label>
-                <input type="range" min="1" max="30" value="1" class="slider">
+                <input type="range" min="1" max="30" value="1" class="slider" id="slider">
                 <p class="slider-output"></p>
             </div>
 
