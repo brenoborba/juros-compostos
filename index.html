@@ -5,57 +5,51 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com"> 
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
 
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-
     <div class="container">
-        <h1>Ciclic</h1>
+        <h1>CICLIC</h1>
         <h2>Simulador</h2>
-        <form action="#" method="GET" id="form">
-            <div>
+        <form action="/" method="GET" id="form">
+            <div class="input-control">
                 <label for="">Nome:</label>
-                <input type="text" name="name" class="input-text">
+                <input type="text" name="name" class="input-text" required>
                 <span class="input-error"></span>
             </div>
 
-            <div>
+            <div class="input-control">
                 <label for="">Mensalidade:</label>
-                <input type="text" name="mensalidade" class="input-text">
+                <input type="text" name="mensalidade" class="input-text" required>
                 <span class="input-error"></span>
             </div>
 
-            <div>
+            <div class="input-control">
                 <label for="">Taxa de juros:</label>
-                <input type="text" name="taxa" class="input-text">
+                <input type="text" name="taxa" class="input-text" required>
+                 <p class="percentage">%</p>
                 <span class="input-error"></span>
+
             </div>
 
-            <div>
-                <label for="">Tempo de contribuição:</label>
-                <select name="selector" id="year-selector" required="required">
-                    <option value="">-- Selecionar --</option>
-                    <option value="12">1 ano</option>
-                    <option value="24">2 anos</option>
-                    <option value="36">3 anos</option>
-                    <option value="48">4 anos</option>
-                    <option value="60">5 anos</option>
-                    <option value="72">6 anos</option>
-                    <option value="84">7 anos</option>
-                    <option value="96">8 anos</option>
-                    <option value="108">9 anos</option>
-                    <option value="120">10 anos</option>
-                </select>
-                <span class="input-error"></span>
+            <div class="custom-slider">
+                <label for="slider">Tempo de contribuição:</label>
+                <input type="range" min="1" max="30" value="1" class="slider">
+                <p class="slider-output"></p>
             </div>
 
             <button type="submit" class="btn">SIMULAR</button>
 
         </form>
     </div>
+
     
 
-    <script src="script.js"></script>
+    <script src="/js/script.js"></script>
+
 </body>
 </html>
