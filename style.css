@@ -6,7 +6,7 @@
 
 body{
     font-family: 'Montserrat', sans-serif;
-    background-color: black;
+    background-color: white;
 }
 
 .container{
@@ -89,7 +89,7 @@ body{
 .container #form .input-control .icon-percentage{
     width: fit-content;
     position: absolute;
-    top: 60%;
+    top: 58%;
     background: black;
     color: white;
     font-weight: 800;
@@ -102,7 +102,7 @@ body{
     width: fit-content;
     position: absolute;
     left: 55.5%;
-    top: 42%;
+    top: 40.8%;
     background: black;
     color: white;
     padding: 4.5px;
@@ -161,6 +161,13 @@ body{
     cursor: pointer;
     border-radius: 3px;
 
+}
+
+.requestResult{
+    width: fit-content;
+    height: fit-content;
+    font-size: 25px;
+    margin: 10px 20px 0 20px;
 }
 
 
